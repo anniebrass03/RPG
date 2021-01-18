@@ -1,2 +1,3 @@
 # Crime Solver
-# Crime solver is a Python Clue-like RPG game
+
+Crime Solver is a Python text-based RPG game
