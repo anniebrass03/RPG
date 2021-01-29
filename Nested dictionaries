@@ -1,0 +1,137 @@
+# Course: CS 30
+# Period: 1
+# Date created: Jan 28th 2021
+# Date last modifed: Jan 29th 2021
+# Name: Annabelle Brass
+# Description: nested dictionaries for RPG game
+
+# Description of starting suspects
+# Dictionary describing suspect Blake Morris
+print ("Description of suspects:")
+blake = {
+  'name': 'Blake Morris',
+  'age': '30',
+  'job': 'banker',
+  'relation': 'co-workers'
+  }
+
+# printing sentences describing Blake Morris
+for q, a in blake.items():
+  name = blake['name']
+  age = blake['age']
+  job = blake['job']
+  relation = blake['relation']
+print (f'{name} is a family man, a beloved husband and dad to 2 girls.')
+print (f'He is {age} years old.')
+print (f'He and the victim were {relation} at their low-level {job} job.')
+print ('Was investigated for connections with a drug cartel.')
+print("")
+
+# Dictionary describing suspect Patty Rose
+patty = {
+'name': 'Patty Rose',
+'age': '52',
+'job': 'retired',
+'relation': 'neighbors'
+}
+
+# printing sentences describing Patty Rose
+for q, a in patty.items():
+  name = patty['name']
+  age = patty['age']
+  job = patty['job']
+  relation = patty['relation']
+print (f'{name} is a {job} school teacher.')
+print (f'She is {age} years old.')
+print (f'She was {relation} with the victim.')
+print (f'Seemingly kind, {name} disliked for being to pushy with rules.')
+print("")
+
+# Dictionary describing suspect Emily Joy
+emily = {
+  'name': 'Emily Joy',
+  'age': '17', 
+  'job': 'student', 
+  'relation': 'stepdad'
+  }
+
+# printing sentences describing Emily Joy
+for q, a in emily.items():
+  name = emily['name']
+  age = emily['age']
+  job = emily['job']
+  relation = emily['relation']
+print (f'{name} is a troubled highschool {job}.')
+print (f'She is {age} years old.')
+print (f'The victim was her {relation} and she hated him.')
+print(f'{name} is known for her mean demeanor and her rebelious tendencies.')
+print("")
+
+# Description of locations
+print ("Description of locations:")
+# Nested dictionary for locations
+locations = {
+  'crime scene': {
+    'location': 'Yellow Brook New York', 
+    'name': 'callaway park',
+    'use': 'Find new evidence and investigate what went down'
+    },
+  'FBI building': {
+    'name': 'The Brennan Institution', 
+    'location': 'downtown New York',
+    'use': 'Process evidence and interview suspects'}
+    }
+
+# printing sentences describing locations
+for q, a in locations.items():
+  print(f"Location: {q.title()}")
+  local = f"{a['location']}"
+  name = a['name']
+  use = a['use']
+
+  print (f"Name: {name.title()}")
+  print (f"Located in {local.title()}.")
+  print (f"Use: {use}")
+  print("")
+
+# Description of inventory
+# Nested dictionary for inventory
+print ("Description of inventory:")
+inventory = {
+  'mass spectrometer': {
+    'where': 'fbi building',
+    'what': 'analyses compounds on evidence'
+  },
+  'Forensic database': {
+    'where': 'fbi building',
+    'what': 'a database full of fingerprints and criminal records'
+  }}
+
+# printing sentences describing inventory
+for q, a in inventory.items():
+  print(f"Item: {q.title()}")
+  local = f"{a['where']}"
+  use = a['what']
+
+  print (f"Located in {local.title()}.")
+  print (f"Description: {use}")
+  print("")
+
+# Dictionary describing evidence
+print ("Description of evidence:")
+evidence = {
+  'fingerprint': 'pencil',
+  'dna': 'hair',
+  'cloth': 'blue fabric'
+}
+
+# printing sentences describing evidence
+for q, a in evidence.items():
+  print(f"Evidence: {q.title()}")
+  fp = evidence['fingerprint']
+  dna = evidence ['dna']
+  cloth = evidence ['cloth']
+
+  print (f"The {q} could be used to find out who the killer is.")
+  print ("Can be used in the forensic data base and mass spectrometer.")
+  print("")
