@@ -5,3 +5,6 @@ Lists and dictionaries have been made for RPG
 
 v1.1
 Added continous gameplay code
+
+v1.2
+Added maps and modules
